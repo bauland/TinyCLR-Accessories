@@ -10,6 +10,18 @@ namespace SeeedGrove {
         public static void Main() {
             // Add a slash (/) before the (/ *) to uncomment a block
             //==============================
+            //*Rtc
+
+            Rtc rtc = new Rtc(FEZ.I2cBus.I2c1);
+            rtc.GetTime();
+            Debug.WriteLine("Seconds=" + rtc.Seconds);
+            Debug.WriteLine("Minutes=" + rtc.Minutes);
+            Debug.WriteLine("Hours=" + rtc.Hours);
+            Debug.WriteLine("Hour mode:" + (rtc.AMMode?"AM/PM":"24 Hrs"));
+            /*while (true)
+            {
+            }//*/
+            //==============================
             /*Relay
             
             Relay relay = new Relay(FEZ.GpioPin.D6);

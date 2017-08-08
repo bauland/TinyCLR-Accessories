@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relay.cs" />
     <Compile Include="RotaryAngleSensor.cs" />
+    <Compile Include="Rtc.cs" />
     <Compile Include="ServoMotor.cs" />
     <Compile Include="SoundSensor.cs" />
     <Compile Include="TemperatureSensor.cs" />
